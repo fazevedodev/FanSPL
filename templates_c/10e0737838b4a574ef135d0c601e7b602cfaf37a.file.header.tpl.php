@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-01-16 16:26:10
+<?php /* Smarty version Smarty-3.1.16, created on 2014-01-24 16:02:20
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:508852d7fa051fe4f6-50577992%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1389885966,
+      1 => 1390575736,
       2 => 'file',
     ),
   ),
@@ -20,5 +20,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_52d7fa05202371_81072465')) {function content_52d7fa05202371_81072465($_smarty_tpl) {?><head>
+    <link rel="stylesheet" type="text/css" media="all" href="css/grid960/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/grid960/text.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/grid960/960_24_col.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
     <title>BWLM</title>
 </head><?php }} ?>

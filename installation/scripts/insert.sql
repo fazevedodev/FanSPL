@@ -75,3 +75,11 @@ INSERT INTO `$`.game_state(state) VALUES('Away Player Won');
 INSERT INTO `$`.game_state(state) VALUES('Home Player Won by W.O.');
 INSERT INTO `$`.game_state(state) VALUES('Away Player Won by W.O.');
 INSERT INTO `$`.game_state(state) VALUES('Cancelled');
+
+INSERT INTO `$`.menu(display_text, link, parent_id) VALUES('News', 'news.php', null);
+INSERT INTO `$`.menu(display_text, link, parent_id) VALUES('Teams', 'teams.php', null);
+INSERT INTO `$`.menu(display_text, link, parent_id) VALUES('Schedule', 'schedule.php', null);
+INSERT INTO `$`.menu(display_text, link, parent_id) VALUES('Ranking', 'ranking.php', null);
+INSERT INTO `$`.menu(display_text, link, parent_id) VALUES('Results', 'results.php', null);
+INSERT INTO `$`.menu(display_text, link, parent_id) VALUES('Replays', 'replays.php', null);
+INSERT INTO `$`.menu(display_text, link, parent_id) VALUES('Rules', 'rules.php', null);

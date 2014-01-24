@@ -267,7 +267,7 @@ CREATE TABLE IF NOT EXISTS `$`.`menu` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `display_text` VARCHAR(45) NOT NULL,
   `link` VARCHAR(45) NULL,
-  `parent_id` INT NOT NULL,
+  `parent_id` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_menu_menu1_idx` (`parent_id` ASC),
   CONSTRAINT `fk_menu_menu1`

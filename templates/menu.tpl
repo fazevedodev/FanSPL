@@ -19,6 +19,7 @@
                 <ul>
                 {foreach from=$menu_item_list item=menu}
                     <li><a href="{$menu['link']}">{$menu['name']}</a></li>
+                    <li><img src="images/divider.png"></li>
                 {/foreach}
                 </ul>
             </div>

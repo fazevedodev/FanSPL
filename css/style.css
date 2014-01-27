@@ -1,3 +1,12 @@
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
+}
+
+.content {
+    background-color: #fff;
+}
+
 .login {
     background-color: #333;
     color: #fff;
@@ -40,15 +49,26 @@
 
 .menu ul {
     list-style-type: none;
+    margin: 0px;
 }
 
 .menu li {
     display: inline;
     color: #fff;
-    padding: 3px;
+    padding: 5px;
 }
 
 .menu li a {
     color: #fff;
     text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: smaller;
+    color: #868686;
+}
+
+.footer p {
+    margin: 3px;
 }

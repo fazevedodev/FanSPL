@@ -14,15 +14,16 @@
                 <a href="index.php"><img src="{$title}" /></a>
             </div>
         </div>
+        <div class="clear"></div>
         <div class="grid_24">
             <div class="menu">
                 <ul>
                 {foreach from=$menu_item_list item=menu}
                     <li><a href="{$menu['link']}">{$menu['name']}</a></li>
-                    <li><img src="images/divider.png"></li>
                 {/foreach}
                 </ul>
             </div>
         </div>
+        <div class="clear"></div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-01-24 17:30:46
+<?php /* Smarty version Smarty-3.1.16, created on 2014-01-24 22:17:42
          compiled from ".\templates\menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2901952e16d5915c251-74489619%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '85192c6e9f55456bef8cf932502504a0684ee09b' => 
     array (
       0 => '.\\templates\\menu.tpl',
-      1 => 1390581038,
+      1 => 1390598260,
       2 => 'file',
     ),
   ),
@@ -42,6 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 " /></a>
             </div>
         </div>
+        <div class="clear"></div>
         <div class="grid_24">
             <div class="menu">
                 <ul>
@@ -53,10 +54,10 @@ $_smarty_tpl->tpl_vars['menu']->_loop = true;
                     <li><a href="<?php echo $_smarty_tpl->tpl_vars['menu']->value['link'];?>
 "><?php echo $_smarty_tpl->tpl_vars['menu']->value['name'];?>
 </a></li>
-                    <li><img src="images/divider.png"></li>
                 <?php } ?>
                 </ul>
             </div>
         </div>
+        <div class="clear"></div>
     </div>
 </div><?php }} ?>

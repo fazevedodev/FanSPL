@@ -16,6 +16,16 @@
     
     $smarty->assign('menu_item_list', $menu_list);
     $smarty->assign('title', 'images/title.png');
+    
+    if(isset($_POST['name']) && isset($_POST['password'])) {
+        $user_data = $db->execSql("SELECT * FROM user WHERE username='".$_POST['name']."' AND password='".sha1($_POST['password'])."'");
+        
+        if(isset($user_data[0])) {
+            
+        } else {
+            
+        }
+    }
 
     $smarty->display("index.tpl");
 ?>

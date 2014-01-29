@@ -3,9 +3,14 @@
         <div class="grid_24">
             <div class="login">
                 <div class="login">
+                    {if isset($user_username)}
+                        You are logged in as {$user_username}.
+                        <a href="logout.php">Logout</a>.
+                    {else}
                     <form method="POST" action="index.php">
                         Name: <input type="text" name="name"/> Password: <input type="password" name="password"/> <input type="submit" value="Login"/>
                     </form>
+                    {/if}
                 </div>
             </div>
         </div>

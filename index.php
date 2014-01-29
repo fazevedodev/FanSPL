@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     require("classes/MySqlConnector.class.php");
     require("libs/Smarty.class.php");
     
@@ -21,10 +23,11 @@
         $user_data = $db->execSql("SELECT * FROM user WHERE username='".$_POST['name']."' AND password='".sha1($_POST['password'])."'");
         
         if(isset($user_data[0])) {
-            
-        } else {
-            
+            $_SESSION['user']['username'] = $user_data[0]['username'];
+            $smarty->assign('user_username', $_SESSION['user']['username']);
         }
+    } else if(isset($_SESSION['user'])) {
+        $smarty->assign('user_username', $_SESSION['user']['username']);
     }
 
     $smarty->display("index.tpl");

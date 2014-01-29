@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-01-24 22:17:42
+<?php /* Smarty version Smarty-3.1.16, created on 2014-01-29 21:10:34
          compiled from ".\templates\menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2901952e16d5915c251-74489619%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '85192c6e9f55456bef8cf932502504a0684ee09b' => 
     array (
       0 => '.\\templates\\menu.tpl',
-      1 => 1390598260,
+      1 => 1391026232,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_52e16d591c9805_58868119',
   'variables' => 
   array (
+    'user_username' => 0,
     'title' => 0,
     'menu_item_list' => 0,
     'menu' => 0,
@@ -30,9 +31,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="grid_24">
             <div class="login">
                 <div class="login">
+                    <?php if (isset($_smarty_tpl->tpl_vars['user_username']->value)) {?>
+                        You are logged in as <?php echo $_smarty_tpl->tpl_vars['user_username']->value;?>
+.
+                        <a href="logout.php">Logout</a>.
+                    <?php } else { ?>
                     <form method="POST" action="index.php">
                         Name: <input type="text" name="name"/> Password: <input type="password" name="password"/> <input type="submit" value="Login"/>
                     </form>
+                    <?php }?>
                 </div>
             </div>
         </div>

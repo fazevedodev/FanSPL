@@ -73,3 +73,7 @@ body {
 .footer p {
     margin: 3px;
 }
+
+.login a {
+    color: #fff;
+}

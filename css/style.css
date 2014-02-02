@@ -57,11 +57,34 @@ body {
     display: inline;
     color: #fff;
     padding: 5px;
+    position: relative;
 }
 
 .menu li a {
     color: #fff;
     text-decoration: none;
+}
+
+li:hover ul{
+    width: 150px;
+    display: block;
+    background: #555;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+}
+
+.submenu li {
+    display: list-item;
+    margin: 0px;
+    padding: 2px 5px 1px 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.submenu li:hover {
+    background: #666;
 }
 
 .footer {

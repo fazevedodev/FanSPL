@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-01-29 21:10:34
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-02 17:44:31
          compiled from ".\templates\menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2901952e16d5915c251-74489619%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '85192c6e9f55456bef8cf932502504a0684ee09b' => 
     array (
       0 => '.\\templates\\menu.tpl',
-      1 => 1391026232,
+      1 => 1391359467,
       2 => 'file',
     ),
   ),
@@ -23,6 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'title' => 0,
     'menu_item_list' => 0,
     'menu' => 0,
+    'submenu' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -60,7 +61,21 @@ $_smarty_tpl->tpl_vars['menu']->_loop = true;
 ?>
                     <li><a href="<?php echo $_smarty_tpl->tpl_vars['menu']->value['link'];?>
 "><?php echo $_smarty_tpl->tpl_vars['menu']->value['name'];?>
+</a>
+                    <?php if (count($_smarty_tpl->tpl_vars['menu']->value['itens'])>0) {?>
+                        <ul class="submenu">
+                        <?php  $_smarty_tpl->tpl_vars['submenu'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['submenu']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['menu']->value['itens']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['submenu']->key => $_smarty_tpl->tpl_vars['submenu']->value) {
+$_smarty_tpl->tpl_vars['submenu']->_loop = true;
+?>
+                            <li><a href="<?php echo $_smarty_tpl->tpl_vars['submenu']->value['link'];?>
+"><?php echo $_smarty_tpl->tpl_vars['submenu']->value['name'];?>
 </a></li>
+                        <?php } ?>
+                        </ul>
+                    <?php }?>
+                    </li>
                 <?php } ?>
                 </ul>
             </div>

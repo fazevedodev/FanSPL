@@ -9,11 +9,23 @@
     $db = new MySqlConnector("localhost", "proleague", "root", "");
     $db->connect();
     
-    $menu = $db->execSql("SELECT * FROM menu");
+    $menu = $db->execSql("SELECT * FROM menu WHERE parent_id is null");
     $menu_list = array();
     foreach($menu as $item) {
-        array_push($menu_list, array('name' => $item['display_text'],
-                                     'link' => $item['link']));
+        $tmp_menu = array();
+        $tmp_menu['name'] = $item['display_text'];
+        $tmp_menu['link'] = $item['link'];
+        $tmp_menu['itens'] = array();
+        
+        $itens = $db->execSql("SELECT * FROM menu WHERE parent_id = ".$item['id']);
+        
+        foreach($itens as $item) {
+            array_push($tmp_menu['itens'], array('name' => $item['display_text'],
+                                                 'link' => $item['link']));
+        }
+    
+        array_push($menu_list, $tmp_menu);
+        
     }
     
     $smarty->assign('menu_item_list', $menu_list);

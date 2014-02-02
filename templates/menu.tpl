@@ -24,7 +24,15 @@
             <div class="menu">
                 <ul>
                 {foreach from=$menu_item_list item=menu}
-                    <li><a href="{$menu['link']}">{$menu['name']}</a></li>
+                    <li><a href="{$menu['link']}">{$menu['name']}</a>
+                    {if count($menu['itens']) > 0}
+                        <ul class="submenu">
+                        {foreach from=$menu['itens'] item=submenu}
+                            <li><a href="{$submenu['link']}">{$submenu['name']}</a></li>
+                        {/foreach}
+                        </ul>
+                    {/if}
+                    </li>
                 {/foreach}
                 </ul>
             </div>

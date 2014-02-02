@@ -17,7 +17,7 @@
         $tmp_menu['link'] = $item['link'];
         $tmp_menu['itens'] = array();
         
-        $itens = $db->execSql("SELECT * FROM menu WHERE parent_id = ".$item['id']);
+        $itens = $db->execSql("SELECT * FROM menu WHERE parent_id = ".$item['id']." ORDER BY display_text");
         
         foreach($itens as $item) {
             array_push($tmp_menu['itens'], array('name' => $item['display_text'],

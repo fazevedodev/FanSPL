@@ -90,6 +90,8 @@
             $smarty->display("step4.tpl");
             break;
         case 5:
+            ini_set('max_execution_time', 300);
+        
             $db = new MySqlConnector($_POST['db_address'], $_POST['db_name'], $_POST['db_user'], $_POST['db_password']);
             if(!$db->connect()) {
                 die("Unable to connect to database.");
@@ -106,8 +108,11 @@
             
             $maps = unserialize($_POST['maps']);
             
+            $menu_team_data = $db->execSql("SELECT * FROM menu WHERE display_text='Teams'");
+            
             foreach($teams as $team) {
                 $db->execSql("INSERT INTO team (name, tag, logo) VALUES ('".$team->get_name()."', '".$team->get_tag()."', '".$team->get_logo()."')");
+                $db->execSql("INSERT INTO menu (display_text, link, parent_id) VALUES ('".$team->get_name()."', 'teams.php?id=".$db->getLastInsertId()."', ".$menu_team_data[0]['id'].")");
             }
             
             $match_state_data = $db->execSql("SELECT * FROM match_state WHERE state = 'Pending'");

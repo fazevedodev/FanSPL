@@ -2,7 +2,6 @@
 <html>
     {include file="header.tpl"}
     <body>
-        <div class="ieBlock"></div>
         <div class="container_24" id="box-shadow">
             {include file="menu.tpl"
                 menu_item_list=$menu_item_list

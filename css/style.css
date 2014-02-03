@@ -54,7 +54,7 @@ body {
 }
 
 .menu li {
-    display: inline;
+    display: inline-block;
     color: #fff;
     padding: 5px;
     position: relative;
@@ -69,6 +69,10 @@ li:hover ul{
     width: 150px;
     display: block;
     background: #555;
+}
+
+.submenu ul {
+    position: absolute;
 }
 
 .submenu {

@@ -131,3 +131,12 @@ p {
     text-align: justify;
     text-indent: 35px;
 }
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    margin-bottom: 2px;
+    color: #822;
+}

@@ -12,18 +12,7 @@
                     <div class="grid_24">
                         <h1>{$team['name']}</h1>
                     </div>
-                    <div class="grid_12">
-                        <div class="team-logo-large">
-                            <img src="images/logo/{$team['logo']}"/>
-                        </div>
-                    </div>
-                    <div class="grid_12">
-                        <ul>
-                            <li>Ahahaha</li>
-                            <li>Ahahaha</li>
-                            <li>Ahahaha</li>
-                            <li>Ahahaha</li>
-                        </ul>
+                    <div class="grid_24">
                     </div>
                 </div>
             </div>

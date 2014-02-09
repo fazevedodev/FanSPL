@@ -7,39 +7,25 @@
                 menu_item_list=$menu_item_list
                 title=$title}
             <div class="clear"></div>
-            <div class="container_24">
-                <div class="grid_24">
-                    <div class="content">
-						<h1>{$team['name']}</h1>
+            <div class="content">
+                <div class="container_24">
+                    <div class="grid_24">
+                        <h1>{$team['name']}</h1>
+                    </div>
+                    <div class="grid_12">
+                        <div class="team-logo-large">
+                            <img src="images/logo/{$team['logo']}"/>
+                        </div>
+                    </div>
+                    <div class="grid_12">
+                        <ul>
+                            <li>Ahahaha</li>
+                            <li>Ahahaha</li>
+                            <li>Ahahaha</li>
+                            <li>Ahahaha</li>
+                        </ul>
                     </div>
                 </div>
-				<div class="grid_12">
-					<div align="center"><img src="images/logo/{$team['logo']}"/></div>
-				</div>
-				<div class="grid_12">
-					<ul>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-					</ul>
-				</div>
             </div>
         </div>
         <div class="container_24">

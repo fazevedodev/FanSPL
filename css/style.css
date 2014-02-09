@@ -164,3 +164,13 @@ table tr th {
     font-weight: bold;
     text-align: center;
 }
+
+.team-logo-large {
+	max-height: 200px;
+	border: 1px solid #888;
+    text-align: center;
+}
+
+.team-logo-large img {
+    max-height: 200px;
+}

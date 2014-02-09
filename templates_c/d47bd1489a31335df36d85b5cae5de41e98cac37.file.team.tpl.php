@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-09 20:37:32
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-09 20:56:24
          compiled from ".\templates\team.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3004352f7d6ac03ee69-56022484%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd47bd1489a31335df36d85b5cae5de41e98cac37' => 
     array (
       0 => '.\\templates\\team.tpl',
-      1 => 1391974649,
+      1 => 1391975782,
       2 => 'file',
     ),
   ),
@@ -34,41 +34,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <?php echo $_smarty_tpl->getSubTemplate ("menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('menu_item_list'=>$_smarty_tpl->tpl_vars['menu_item_list']->value,'title'=>$_smarty_tpl->tpl_vars['title']->value), 0);?>
 
             <div class="clear"></div>
-            <div class="container_24">
-                <div class="grid_24">
-                    <div class="content">
-						<h1><?php echo $_smarty_tpl->tpl_vars['team']->value['name'];?>
+            <div class="content">
+                <div class="container_24">
+                    <div class="grid_24">
+                        <h1><?php echo $_smarty_tpl->tpl_vars['team']->value['name'];?>
 </h1>
                     </div>
+                    <div class="grid_12">
+                        <div class="team-logo-large">
+                            <img src="images/logo/<?php echo $_smarty_tpl->tpl_vars['team']->value['logo'];?>
+"/>
+                        </div>
+                    </div>
+                    <div class="grid_12">
+                        <ul>
+                            <li>Ahahaha</li>
+                            <li>Ahahaha</li>
+                            <li>Ahahaha</li>
+                            <li>Ahahaha</li>
+                        </ul>
+                    </div>
                 </div>
-				<div class="grid_12">
-					<div align="center"><img src="images/logo/<?php echo $_smarty_tpl->tpl_vars['team']->value['logo'];?>
-"/></div>
-				</div>
-				<div class="grid_12">
-					<ul>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-						<li>Ahahaha</li>
-					</ul>
-				</div>
             </div>
         </div>
         <div class="container_24">

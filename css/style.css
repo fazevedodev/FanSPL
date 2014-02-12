@@ -164,3 +164,7 @@ table tr th {
     font-weight: bold;
     text-align: center;
 }
+
+.image-medium {
+    max-height: 100px;
+}

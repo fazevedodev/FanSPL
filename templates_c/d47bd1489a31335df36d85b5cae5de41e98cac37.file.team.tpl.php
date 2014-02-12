@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-12 23:04:50
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-12 23:11:21
          compiled from ".\templates\team.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3004352f7d6ac03ee69-56022484%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd47bd1489a31335df36d85b5cae5de41e98cac37' => 
     array (
       0 => '.\\templates\\team.tpl',
-      1 => 1392242688,
+      1 => 1392243079,
       2 => 'file',
     ),
   ),
@@ -73,19 +73,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         <b>Current Roster</b>
                                     </td>
                                 </tr>
-                                <?php $_smarty_tpl->tpl_vars['i'] = new Smarty_variable(0, null, 0);?>
                                 <?php  $_smarty_tpl->tpl_vars['player'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['player']->_loop = false;
+ $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['roster']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['player']->key => $_smarty_tpl->tpl_vars['player']->value) {
 $_smarty_tpl->tpl_vars['player']->_loop = true;
+ $_smarty_tpl->tpl_vars['i']->value = $_smarty_tpl->tpl_vars['player']->key;
 ?>
-                                <?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
-
                                 <tr>
-                                    <td <?php if ($_smarty_tpl->tpl_vars['i']->value%2==0) {?>
-                                            style="background: #BBB; color: #000"
-                                        <?php } else { ?>
+                                    <td <?php if ($_smarty_tpl->tpl_vars['i']->value%2!=0) {?>
                                             style="background: #DDD; color: #000"
+                                        <?php } else { ?>
+                                            style="background: #EEE; color: #000"
                                         <?php }?>
                                     >
                                         <img src="images/<?php echo $_smarty_tpl->tpl_vars['player']->value['race']['icon'];?>

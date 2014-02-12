@@ -40,14 +40,12 @@
                                         <b>Current Roster</b>
                                     </td>
                                 </tr>
-                                {$i=0}
-                                {foreach from=$roster item=player}
-                                {$i++}
+                                {foreach from=$roster key=i item=player}
                                 <tr>
-                                    <td {if $i%2 == 0}
-                                            style="background: #BBB; color: #000"
-                                        {else}
+                                    <td {if $i%2 != 0}
                                             style="background: #DDD; color: #000"
+                                        {else}
+                                            style="background: #EEE; color: #000"
                                         {/if}
                                     >
                                         <img src="images/{$player['race']['icon']}"/> {$player['name']}

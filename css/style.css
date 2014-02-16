@@ -168,3 +168,31 @@ table tr th {
 .image-medium {
     max-height: 100px;
 }
+
+table.ranking {
+    border: 1px solid #CCC;
+}
+
+table.ranking td, table.ranking th{
+    border: 0px;
+}
+
+.ranking tr.header {
+    background-color: #888;
+    background-image: url("../images/dark-shadow.png");
+    background-repeat: repeat-x;
+    color: #fff;
+}
+
+.ranking tr.odd {
+    background-color: #DDD;
+    background-image: url("../images/clear-shadow.png");
+    background-repeat: repeat-x;
+}
+
+.ranking tr.even {
+    background-color: #FFF;
+    background-image: url("../images/clear-shadow.png");
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #CCC;
+}

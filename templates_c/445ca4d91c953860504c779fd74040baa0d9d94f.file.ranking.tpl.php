@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-16 22:16:45
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-17 16:37:35
          compiled from ".\templates\ranking.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1957153011dee1ba3c6-48858124%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '445ca4d91c953860504c779fd74040baa0d9d94f' => 
     array (
       0 => '.\\templates\\ranking.tpl',
-      1 => 1392585402,
+      1 => 1392651353,
       2 => 'file',
     ),
   ),
